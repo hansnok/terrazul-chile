@@ -1,12 +1,12 @@
 <?php
 
 session_start();
-
+include 'encrypter.php';
 if( isset($_POST['tarea']) && isset($_SESSION['usuario']) ){
     
     $servidor="localhost";
-    $usuario="root"; // 
-    $contraseña="";
+    $usuario="terrazul_2"; // 
+    $contraseña = Encrypter::decrypt("4q8xp98EE34oxahuZZ+GgWr6QwlgOW0UGJ3+69VUjW4=");
 
     $conexion=  mysql_connect($servidor,$usuario,$contraseña);
     $j=1;
@@ -18,7 +18,7 @@ if( isset($_POST['tarea']) && isset($_SESSION['usuario']) ){
         }
     }
     // la conexión es exitosa
-    $bbdd="actvidades";
+    $bbdd="terrazul_intranet";
     $db=mysql_select_db($bbdd,$conexion);
     $id_tarea=$_POST['tarea'];
     $query="UPDATE tarea SET estado='finalizado' WHERE id_tarea='$id_tarea' ";
@@ -39,9 +39,9 @@ if( isset($_POST['tarea']) && isset($_SESSION['usuario']) ){
     
 }else{
     if( isset($_SESSION['usuario']) ){
-        echo'<META HTTP-EQUIV="Refresh" CONTENT="0; URL=http://localhost/GestorActividades/Actividad.php">';
+        echo'<META HTTP-EQUIV="Refresh" CONTENT="0; URL=actividad.php">';
     }else{
-        echo'<META HTTP-EQUIV="Refresh" CONTENT="0; URL=http://localhost/GestorActividades/index.php">';
+        echo'<META HTTP-EQUIV="Refresh" CONTENT="0; URL=index.php">';
     }
 }
 

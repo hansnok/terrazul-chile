@@ -66,9 +66,7 @@
                             <li><a href="contacto.php">Contacto</a>
                             </li>
                             <li><a href="intranet/index.php">Intranet</a>
-                            </li>   
-<!--                            <li id="signup"><a href="signup.html" class="button no-margin">SIGN UP</a>
-                            </li>-->
+                            </li>
                         </ul>
                     </section>
                 </nav>
@@ -164,7 +162,7 @@
                         <div class="large-4 column">
                             <ul class="pricing-table highlight">
                                 <li class="title">BASICO</li>
-                                <li class="price">1 UF<span>/ Mes</span>
+                                <li class="price"><span></span>
                                 </li>
                                 <li class="bullet-item"><strong></strong> Balance anual</li>
                                 <li class="bullet-item"><strong></strong> Liquidaci&#243;n remuneraciones hasta 5 empleados</li>
@@ -182,7 +180,7 @@
                         <div class="large-4 column">
                             <ul class="pricing-table highlight">
                                 <li class="title">PRO-PYME</li>
-                                <li class="price"> 3 UF<span>/ mes</span>
+                                <li class="price"><span></span>
                                 </li>
                                 <li class="bullet-item"><strong></strong>Balance anual</li>
                                 <li class="bullet-item"><strong></strong> Liquidaci&#243;n remuneraciones hasta 10 empleado</li>
@@ -199,7 +197,7 @@
                         <div class="large-4 column">
                             <ul class="pricing-table highlight">
                                 <li class="title">PYME</li>
-                                <li class="price">5 UF <span>/ mes</span>
+                                <li class="price"><span></span>
                                 </li>
                                 <li class="bullet-item"><strong></strong> Balance anual</li>
                                 <li class="bullet-item"><strong></strong> Liquidaci&#243;n remuneraciones hasta 30 empleado</li>

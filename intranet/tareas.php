@@ -3,8 +3,8 @@ session_start();
 include 'encrypter.php';
 if($_POST['dia']=='dia' && isset($_SESSION['usuario'])){
     $servidor="localhost";
-    $usuario="root"; // 
-    $contraseña="";
+	$usuario = "terrazul_tareas"; // usuario que solo puede ver la tabla usuarios, no modificar nada. Permisos en phpMyAdmin
+    $contraseña = Encrypter::decrypt("pgonJ5SQ42gtVKBpEUaw4gs/Pa7V6f4ZaU8ZjRCtKO8=");
 
     $conexion=  mysql_connect($servidor,$usuario,$contraseña);
     $j=1;
@@ -16,7 +16,7 @@ if($_POST['dia']=='dia' && isset($_SESSION['usuario'])){
         }
     }
     // la conexión es exitosa
-    $bbdd="actvidades";
+    $bbdd="terrazul_intranet";
     $db=mysql_select_db($bbdd,$conexion);
     $actual=$_SESSION['usuario'];
     $dia_actual=date("d"); //date("d-m-Y");
@@ -156,8 +156,8 @@ if($_POST['dia']=='dia' && isset($_SESSION['usuario'])){
 }else{
     if($_POST['semana']=='semana' && isset($_SESSION['usuario'])){
         $servidor="localhost";
-        $usuario="root"; // 
-        $contraseña="";
+        $usuario = "terrazul_tareas"; // usuario que solo puede ver la tabla usuarios, no modificar nada. Permisos en phpMyAdmin
+        $contraseña = Encrypter::decrypt("pgonJ5SQ42gtVKBpEUaw4gs/Pa7V6f4ZaU8ZjRCtKO8=");
 
         $conexion=  mysql_connect($servidor,$usuario,$contraseña);
         $j=1;
@@ -169,7 +169,7 @@ if($_POST['dia']=='dia' && isset($_SESSION['usuario'])){
             }
         }
         // la conexión es exitosa
-        $bbdd="actvidades";
+        $bbdd="terrazul_intranet";
         $db=mysql_select_db($bbdd,$conexion);
         $actual=$_SESSION['usuario'];
         $dia_actual=date("d"); //date("d-m-Y");
@@ -297,7 +297,7 @@ if($_POST['dia']=='dia' && isset($_SESSION['usuario'])){
       
        
     }else{
-        echo'<META HTTP-EQUIV="Refresh" CONTENT="0; URL=http://localhost/GestorActividades/index.php">';
+        echo'<META HTTP-EQUIV="Refresh" CONTENT="0; URL=index.php">';
     }
 }
 ?>

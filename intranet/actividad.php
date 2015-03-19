@@ -119,54 +119,32 @@
           </div>
           <div class="navbar-collapse collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="Actividad.php">Inicio</a></li> <!-- Falta link a inicio.-->
+              <li class="active"><a href="actividad.php">Inicio</a></li> <!-- Falta link a inicio.-->
 <!--              <li><a href="index.php">Tareas urgentes</a></li>-->
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tareas <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="index.php">Activas</a></li>
-                  <li><a href="index.php">Creadas</a></li>
-                  <li><a href="index.php">Eliminadas</a></li>
+               <ul class="dropdown-menu">
+ <!--                  <li><a href="#">Activas</a></li>
+                  <li><a href="#">Creadas</a></li>
+                  <li><a href="#">Eliminadas</a></li>
                    <li class="divider"></li>
                   <li class="dropdown-header">Tareas no vistas</li>
-                  <li><a href="index.php">Nuevas</a></li>
-                  
-                </ul>
+                  <li><a href="#">Nuevas</a></li>
+ -->                     
+            </ul>
               </li>
-<!--               <li><a href="#">Activas</a></li>
-               <li><a href="#">Creadas</a></li>-->
                <li><a href="#">Datos  </a></li>
-               <li><a href="#">Desconexión  </a></li>
+               <li><a href="cerrar.php">Desconexión  </a></li>
                <form class="navbar-form navbar-left">
                    <input type="search" class="form-control col-lg-8" placeholder="Buscar por nombre">
             </form>
             </ul>
-<!--            <form class="navbar-form navbar-left">
-              <input type="text" class="form-control col-lg-8" placeholder="Buscar por nombre">
-            </form>-->
-<!--            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Datos  </a></li>  Link a tabla de SII
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                </ul>
-              </li>
-            </ul>-->
+
           </div>
         </div>
        </div>
            </div>
-     </div> <!--  aca termina container-->
-<!--      <br>
-      <br>
-      <br>
-      <br>
-      <br>-->
+     </div> 
     
       <div class="container crear" id='crear'>
           <div class="row" id="agregar">
@@ -174,6 +152,8 @@
               <div class="col-xs-12 col-ms-8"  id="informacion"></div>
               
               <?php // comprobar formulario 
+				
+				include 'encrypter.php';
                 if( isset($_POST['hide']) && $_POST['hide']=='enviado'){
                     if( isset($_POST['id']) && isset($_POST['nombre']) && isset($_POST['descripcion']) && isset($_POST['optionsRadios']) &&
                          isset($_POST['fecha_inicio']) && isset($_POST['hora_inicio']) && isset($_POST['fecha_termino']) && isset($_POST['hora_termino'])){
@@ -181,9 +161,9 @@
                         if($_POST['id']!='no' && ( ($_POST['fecha_inicio']<$_POST['fecha_termino']) or ($_POST['fecha_inicio']==$_POST['fecha_termino'] && $_POST['hora_inicio']<=$_POST['hora_termino']) ) ){// comprueba que selecciono una persona y la fecha
                             // datos correctos
                             
-                            $servidor="localhost";
-                            $usuario="root"; // usuario que solo puede ver la tabla usuarios, no modificar nada. Permisos en phpMyAdmin
-                            $contraseña="";
+                            $servidor = "localhost";
+                            $usuario = "terrazul_tareas"; // usuario que solo puede ver la tabla usuarios, no modificar nada. Permisos en phpMyAdmin
+                            $contraseña = Encrypter::decrypt("pgonJ5SQ42gtVKBpEUaw4gs/Pa7V6f4ZaU8ZjRCtKO8=");
 
                             $conexion=  mysql_connect($servidor,$usuario,$contraseña);
                             $j=1;
@@ -195,7 +175,7 @@
                                 }
                             }
                             // la conexión es exitosa
-                            $bbdd="actvidades";
+                            $bbdd="terrazul_intranet";
                             $db=mysql_select_db($bbdd,$conexion);
                             
                             $fecha_inicio=  explode('-', $_POST['fecha_inicio']); // arreglo con la fecha
@@ -213,15 +193,19 @@
                             $hora_termino= explode(':',$_POST['hora_termino']);
                             $hora2=$hora_termino[0];
                             $minuto2=$hora_termino[1];
+                            
                             $id_user=$_POST['id'];
                             $descripcion=$_POST['descripcion'];
                             $nombre=$_POST['nombre'];
                             $prioridad=$_POST['optionsRadios'];
                             $user=$_POST['usuario_session'];
                             
-                            $query_tarea="INSERT INTO tarea (nombre,descripcion,prioridad,creacion_dia,creacion_mes,creacion_anio,termino_dia,termino_mes,termino_anio,inicio_hora,inicio_minuto,termino_hora,termino_minuto,estado,id_usuario)
-                                            VALUES ('$nombre','$descripcion','$prioridad','$dia1','$mes1','$anio1','$dia2','$mes2','$anio2','$hora1','$minuto1','$hora2','$minuto2','activo','$user' )";
+                            $query_tarea="INSERT INTO tarea (id_usuario,nombre,descripcion,prioridad,estado,creacion_dia,creacion_mes,creacion_anio,termino_dia,termino_mes,termino_anio,inicio_hora,inicio_minuto,termino_hora,termino_minuto)
+                                            VALUES ('$user','$nombre','$descripcion','$prioridad','activo','$dia1','$mes1','$anio1','$dia2','$mes2','$anio2','$hora1','$minuto1','$hora2','$minuto2')";
                             $consulta=  mysql_query($query_tarea,$conexion);
+                            
+                       
+                            
                             if($consulta){
                                 
                                 $query_aux="SELECT id_tarea
@@ -235,8 +219,8 @@
                                 $consulta_aux=  mysql_query($query_aux,$conexion);
                                 $id_tarea=  mysql_result($consulta_aux, 0);
                                 $date=date('Y-m-d');
-                                 $query_usuario_tarea="INSERT INTO usuario_tarea
-                                                        VALUES ('$id_tarea','$id_user','$date')";
+                                 $query_usuario_tarea="INSERT INTO usuario_tarea (id_usuario,id_tarea,date)
+                                                        VALUES ('$id_user','$id_tarea','$date')";
                                  $consulta_ut=  mysql_query($query_usuario_tarea,$conexion);
                                  if($consulta_ut){
                                      echo '<div class="col-xs-12 col-ms-8" >
@@ -248,7 +232,7 @@
                                      echo '<div class="col-xs-12 col-ms-8" >
                                     <div class="alert alert-dismissable alert-warning">
                                         <button type="button" class="close" data-dismiss="alert">×</button>
-                                    <strong>Ocurrio un error al crear la tarea</strong>
+                                    <strong>Ocurrio un error al crear la tarea, if interior</strong>
                                 </div></div>';
                                  }
                             }else{
@@ -263,14 +247,14 @@
                            echo '<div class="col-xs-12 col-ms-8" >
                                     <div class="alert alert-dismissable alert-warning">
                                         <button type="button" class="close" data-dismiss="alert">×</button>
-                                    <strong>No se creo la tarea</strong>, revise que los datos ingresados no son validos
+                                    <strong>No se creo la tarea</strong>, revise que los datos ingresados sean validos
                                 </div></div>'; 
                         }
                     }else{
                         echo '<div class="col-xs-12 col-ms-8" >
                                 <div class="alert alert-dismissable alert-warning">
                                     <button type="button" class="close" data-dismiss="alert">×</button>
-                                <strong>No se creo la tarea</strong>, revise que los datos ingresados no son validos
+                                <strong>No se creo la tarea</strong>, revise que los datos ingresados sean validos
                             </div></div>';
                     }
                 }else{

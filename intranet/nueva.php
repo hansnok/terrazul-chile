@@ -15,8 +15,8 @@ if($_POST['tarea']=='crear' && isset($_SESSION['usuario']) && $_SESSION['ida_cre
                             <select class="form-control" id="select" name="id" required="required">';
     
     $servidor="localhost";
-    $usuario="root"; // usuario que solo puede ver la tabla usuarios, no modificar nada. Permisos en phpMyAdmin
-    $contraseña="";
+    $usuario = "terrazul_login"; // usuario que solo puede ver la tabla usuarios, no modificar nada. Permisos en phpMyAdmin
+    $contraseña = Encrypter::decrypt("ZM+we6pLWlz0XAmphkeFmK98+6Sx1bkq7vsra1JMWgk=");
 
     $conexion=  mysql_connect($servidor,$usuario,$contraseña);
     $j=1;
@@ -28,7 +28,7 @@ if($_POST['tarea']=='crear' && isset($_SESSION['usuario']) && $_SESSION['ida_cre
         }
     }
     // la conexión es exitosa
-    $bbdd="actvidades";
+    $bbdd="terrazul_intranet";
     $db=mysql_select_db($bbdd,$conexion);
 
     $query=" SELECT nombre_usuario, email
@@ -38,7 +38,7 @@ if($_POST['tarea']=='crear' && isset($_SESSION['usuario']) && $_SESSION['ida_cre
     $superusuario=$_SESSION['usuario'];
     $fecha=date('Y-m-d');
     $hora=date('H:i');
-    echo "<option valur='no'>Seleccione una persona</option>";
+    echo "<option value='no'>Seleccione una persona</option>";
     while($nombres=  mysql_fetch_assoc($consulta)){
         echo "<option value='".$nombres['email']."' >".$nombres['nombre_usuario']."</option>";
     }
@@ -141,9 +141,9 @@ if($_POST['tarea']=='crear' && isset($_SESSION['usuario']) && $_SESSION['ida_cre
     
 }else{
     if($_SESSION['ida_crear']==0){
-        echo'<META HTTP-EQUIV="Refresh" CONTENT="0; URL=http://localhost/GestorActividades/Actividad.php">';
+        echo'<META HTTP-EQUIV="Refresh" CONTENT="0; URL=actividad.php">';
     }else{
-        echo'<META HTTP-EQUIV="Refresh" CONTENT="0; URL=http://localhost/GestorActividades/index.php">';
+        echo'<META HTTP-EQUIV="Refresh" CONTENT="0; URL=index.php">';
     }
 }
 

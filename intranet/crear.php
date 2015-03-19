@@ -49,7 +49,7 @@
           </div>
           <div class="navbar-collapse collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="Actividad.php">Inicio</a></li> <!-- Falta link a inicio.-->
+              <li class="active"><a href="actividad.php">Inicio</a></li> <!-- Falta link a inicio.-->
 <!--              <li><a href="index.php">Tareas urgentes</a></li>-->
               <li class="dropdown">
                 <a href="" class="dropdown-toggle" data-toggle="dropdown">Tareas <b class="caret"></b></a>
@@ -66,7 +66,7 @@
 <!--               <li><a href="#">Activas</a></li>
                <li><a href="#">Creadas</a></li>-->
                <li><a href="#">Datos  </a></li>
-               <li><a href="#">Desconexión  </a></li>
+               <li><a href="cerrar.php">Desconexión  </a></li>
                <form class="navbar-form navbar-left">
                    <input type="search" class="form-control col-lg-8" placeholder="Buscar por nombre">
             </form>

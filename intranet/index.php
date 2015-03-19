@@ -25,11 +25,8 @@
     <script type='text/javascript'> 
         var x=$(document);
         x.ready(function() {
-           // Esta primera parte crea un loader no es necesaria
-           
            // Interceptamos el evento submit
             $('#form123').submit(function() {
-               
           // Enviamos el formulario usando AJAX
                 $.ajax({
                     type: 'POST',
@@ -85,17 +82,10 @@
                             </div>
                         </div>
                         <div class="form-group">
-<!--                            <div class="col-sm-offset-3 col-sm-9">
-                                <div class="checkbox">
-                                    <label class="">
-                                        <input type="checkbox" class="">Remember me</label>
-                                </div>
-                            </div>-->
                         </div>
                         <div class="form-group last">
                             <div class="col-sm-offset-3 col-sm-9">
                                 <input type="submit" class="btn btn-success btn-sm" id="enviar" value='Entrar'>
-<!--                                <a href="actividad.php" class="btn btn-success btn-sm"> Entrar</a>-->
                                 <button type="reset" class="btn btn-default btn-sm">Borrar</button>
                             </div>
                         </div>
@@ -112,19 +102,6 @@
              </div>
          </div>
 </div>
-      
-     
-     
-     
-     
-<!--     <div class="container">
-       <div class="row">
-           <div class="col-xs-12 col-ms-12">
-            <div class="navbar navbar-default navbar-fixed-bottom">
-            </div>
-           </div>
-       </div>
-     </div>   aca termina container-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     

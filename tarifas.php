@@ -67,9 +67,7 @@
                             <li><a href="contacto.php">Contacto</a>
                             </li>
                             <li><a href="intranet/index.php">Intranet</a>
-                            </li>   
-<!--                            <li id="signup"><a href="signup.html" class="button no-margin">SIGN UP</a>
-                            </li>-->
+                            </li> 
                         </ul>
                     </section>
                 </nav>
@@ -110,7 +108,7 @@
                         <div class="large-4 column">
                             <ul class="pricing-table highlight">
                                 <li class="title">BASICO</li>
-                                <li class="price">1 UF<span>/ Mes</span>
+                                <li class="price"><span></span>
                                 </li>
                                 <li class="bullet-item"><strong></strong> Balance anual</li>
                                 <li class="bullet-item"><strong></strong> Liquidaci&#243;n remuneraciones hasta 5 empleados</li>
@@ -128,7 +126,7 @@
                         <div class="large-4 column">
                             <ul class="pricing-table highlight">
                                 <li class="title">PRO-PYME</li>
-                                <li class="price"> 3 UF<span>/ mes</span>
+                                <li class="price"><span></span>
                                 </li>
                                 <li class="bullet-item"><strong></strong>Balance anual</li>
                                 <li class="bullet-item"><strong></strong> Liquidaci&#243;n remuneraciones hasta 10 empleado</li>
@@ -145,7 +143,7 @@
                         <div class="large-4 column">
                             <ul class="pricing-table highlight">
                                 <li class="title">PYME</li>
-                                <li class="price">5 UF <span>/ mes</span>
+                                <li class="price"><span></span>
                                 </li>
                                 <li class="bullet-item"><strong></strong> Balance anual</li>
                                 <li class="bullet-item"><strong></strong> Liquidaci&#243;n remuneraciones hasta 30 empleado</li>
@@ -165,54 +163,6 @@
                 </div>
             </div>
         </section><br><br>
-
-<!--        <section id="dedicated" class="part">
-            <div class="row title">
-                <div class="large-12 column">
-                    <h6>Titulo</h6>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="large-12 column">
-                    <p>
-                        Descripcion
-                    </p>
-
-                    <div class="row">
-                        <div class="large-6 column">
-                            <ul class="pricing-table ">
-                                <li class="title">Basic</li>
-                                <li class="price">$199.99</li>
-                                <li class="bullet-item">Intel Xeon E3-1265L 2.5GHz</li>
-                                <li class="bullet-item">100 Mbps Uplink</li>
-                                <li class="bullet-item">4 GB DDR3 Memory</li>
-                                <li class="bullet-item">500 GB RAID-1 Drives</li>
-                                <li class="bullet-item">10 TB Bandwidth</li>
-                                <li class="bullet-item">Up to 5 Dedicated IPs</li>
-                                <li class="cta-button"><a class="button" href="contacto.php">Cotizar</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="large-6 column">
-                            <ul class="pricing-table">
-                                <li class="title">Elite</li>
-                                <li class="price">$299.99</li>
-                                <li class="bullet-item">Intel Xeon E3-1230 V2 3.3GHz</li>
-                                <li class="bullet-item">100 Mbps Uplink</li>
-                                <li class="bullet-item">16 GB DDR3 Memory</li>
-                                <li class="bullet-item">1 TB RAID-1 Drives</li>
-                                <li class="bullet-item">10 TB Bandwidth</li>
-                                <li class="bullet-item">Up to 5 Dedicated IPs</li>
-                                <li class="cta-button"><a class="button" href="contacto.php">Cotizar</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>-->
-
     </section>
 
     <a id="back-top" href="#"><i class="icon-caret-up"></i></a>

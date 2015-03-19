@@ -3,12 +3,12 @@ session_start();
 include 'encrypter.php';
 if( isset($_POST['id']) && isset($_SESSION['usuario'])){
     $servidor="localhost";
-    $usuario="root"; // 
-    $contraseña="";
+    $usuario = "terrazul_login"; // usuario que solo puede ver la tabla usuarios, no modificar nada. Permisos en phpMyAdmin
+    $contraseña = Encrypter::decrypt("ZM+we6pLWlz0XAmphkeFmK98+6Sx1bkq7vsra1JMWgk=");
 
     $conexion=  mysql_connect($servidor,$usuario,$contraseña);
     $j=1;
-    while($j>0){ // si no se conecta, siga intentandolo
+    while($j>0){ 
         if(!($conexion= mysql_connect($servidor,$usuario,$contraseña))){
             $conexion= mysql_connect($servidor,$usuario,$contraseña);
         }else{
@@ -16,9 +16,9 @@ if( isset($_POST['id']) && isset($_SESSION['usuario'])){
         }
     }
     // la conexión es exitosa
-    $bbdd="actvidades";
-    $db=mysql_select_db($bbdd,$conexion);
-    $actual=$_SESSION['usuario'];
+    $bbdd = "terrazul_intranet";
+    $db = mysql_select_db($bbdd,$conexion);
+    $actual = $_SESSION['usuario'];
     
     $id_tarea=$_POST['id']; // recupero información de la tarea
     
@@ -27,6 +27,7 @@ if( isset($_POST['id']) && isset($_SESSION['usuario'])){
             WHERE tarea.id_tarea=usuario_tarea.id_tarea
                 and usuario.email=tarea.id_usuario
                 and tarea.id_tarea='$id_tarea'";
+    
     $consulta=mysql_query($query,$conexion);
     $datos=mysql_fetch_assoc($consulta);
     echo '<table class="table table-striped table-hover "> <tbody>';
@@ -114,7 +115,7 @@ if( isset($_POST['id']) && isset($_SESSION['usuario'])){
           </script>";
     
 }else {
-     echo'<META HTTP-EQUIV="Refresh" CONTENT="0; URL=http://localhost/GestorActividades/index.php">';
+     echo'<META HTTP-EQUIV="Refresh" CONTENT="0; URL=index.php">';
 }
 
 
