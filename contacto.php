@@ -102,12 +102,14 @@
                     <p>
                         Para contactarnos, por favor llena el siguiente formulario
                         
-    <?php 
-    // require 'PHPMailerAutoload.php';
+    <?php
+    
     include 'PHPMailerAutoload.php';
     include 'class.phpmailer.php';
     include 'class.smtp.php';
     include 'intranet/encrypter.php';
+    
+    
     if(isset($_POST['nombre']) && isset($_POST['email']) &&isset($_POST['tema']) && isset($_POST['texto']) && isset($_POST['fono'])){      
         $correo=$_POST['email'];
         if(!preg_match("/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+
@@ -116,7 +118,7 @@
             
             $servidor="localhost";
             $usuario="terrazul_login"; // usuario que solo puede ver la tabla usuarios, no modificar nada. Permisos en phpMyAdmin
-            $contraseña= ",Ls^8-vlb3WE";
+            $contraseña=  Encrypter::decrypt("ZM+we6pLWlz0XAmphkeFmK98+6Sx1bkq7vsra1JMWgk=");
 
             $conexion=  mysql_connect($servidor,$usuario,$contraseña);
             $j=1;

@@ -133,7 +133,7 @@
  -->                     
             </ul>
               </li>
-               <li><a href="#">Datos  </a></li>
+               <li><a href="datos.php?token=RdDrSLVm1fODZfLjilJj0brrqdB7NKEPmIr/tUeJHO8=">Datos  </a></li>
                <li><a href="cerrar.php">Desconexión  </a></li>
                <form class="navbar-form navbar-left">
                    <input type="search" class="form-control col-lg-8" placeholder="Buscar por nombre">
