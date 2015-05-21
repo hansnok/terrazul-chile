@@ -61,8 +61,6 @@
                             </li>
                             <li><a href="servicios.php">Servicios</a>
                             </li>
-                            <li><a href="tarifas.php">Tarifas</a>
-                            </li>
                             <li><a href="contacto.php">Contacto</a>
                             </li>
                             <li><a href="intranet/index.php">Intranet</a>
@@ -82,138 +80,15 @@
                     <div id="hero-message" class="fadeInDown animated">
                         <h1 style="color: #5882FA;"><bold>Terrazul Asesorias Empresariales</bold></h1>
                         <h4 style="color: #FFFF00;" >Que la Reforma Tributaria no se convierta en un dolor de cabeza.  Te ofrecemos distintas alternativas para dar un oportuno cumplimiento contable y tributario, tanto a personas como empresas.</h4>
-                        <br><br><br><br><br><a href="servicios.php" class="button">Consultar Planes</a>
+                        <br><br><br><br><br><a href="servicios.php" class="button">Ver servicios</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="part">
-            <div class="row title">
-                <div class="large-12 column">
-                    <h6>FORMA DE TRABAJO</h6>
-                </div>
-            </div>
-
-            <div class="row features spacy">
-                <div class="large-4 column">
-                    <h4><i>1.</i> Paso Uno</h4>
-                    <p align="justify">
-                        Escanee sus cartolas bancarias, y todos sus movimientos contables del mes (facturas, boletas de honorarios, recibos).
-                    </p>
-                </div>
-
-                <div class="large-4 column">
-                    <h4><i>2.</i> Paso Dos</h4>
-                    <p align="justify">
-                        Env&#237;e el archivo con toda la informaci&#243;n del Paso Uno a <a href="mailto:proceso@terrazul-chile.cl"><img src="correo.jpg"></a>
-                    </p>
-                </div>
-
-                <div class="large-4 column">
-                    <h4><i>3.</i> Paso Tres</h4>
-                    <p align="justify">
-                        Incluiremos en la contabilidad mensual todos los documentos enviados por usted. Realizaremos la declaraci&#243;n de IVA, completaremos la n&#243;mina de sueldos y le enviaremos todos los archivos respectivos por correo. Luego cargaremos todo al SII y Previred para que usted realice el pago de impuestos y previsi&#243;n social en l&#237;nea. 
-                    </p>
-                </div>
-            </div>
-
-            <div class="row features spacy">
-                <div class="large-4 column">
-                    <h4 class="no-top-margin"><i>4.</i> Paso Cuatro</h4>
-                    <p align="justify">
-                        Al final del a&ntilde;o, prepararemos los estados financieros anuales y le enviaremos un reporte f&#225;cil de entender y procesar. Adicionalmente, realizaremos su declaraci&#243;n tributaria personal y empresarial.
-                    </p>
-                </div>
-
-                <div class="large-4 column">
-
-                    <h4 class="no-top-margin"><i>5.</i> Paso Cinco</h4>
-                    <p align="justify">
-                        Periodicamente nos reuniremos con Usted para discutir sus estados financieros y tributarios. Adem&#225;s de asesorarle en sus temas de inter&#233;s.
-                    </p>
-                </div>
-
-                <div class="large-4 column">
-                    <h4 class="no-top-margin"><i class="icon-comments"></i> Soporte Permanente</h4>
-                    <p align="justify">
-                        Resolveremos sus dudas e inquietudes en cualquier momento, no dude en <a href="contacto.php">contactarnos</a> via e-mail o telefonicamente.
-                    </p>
-                </div>
-            </div>
-
-<!--            <div class="row ">
-                <div class="large-12 column text-center">
-                    <a href="features.html" class="button">Servicios</a>
-                </div>
-            </div>-->
-        </section>
+        
 
         <section class="part">
-            <div class="row title">
-                <div class="large-12 column">
-                    <h6>PLANES</h6>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="large-12 column">
-                    <div class="row">
-                        <div class="large-4 column">
-                            <ul class="pricing-table highlight">
-                                <li class="title">BASICO</li>
-                                <li class="price"><span></span>
-                                </li>
-                                <li class="bullet-item"><strong></strong> Balance anual</li>
-                                <li class="bullet-item"><strong></strong> Liquidaci&#243;n remuneraciones hasta 5 empleados</li>
-                                <li class="bullet-item"><strong></strong> Declaraci&#243;n de renta anual</li>
-                                <li class="bullet-item"><strong></strong> Proceso declaraciones juradas</li>
-                                <li class="bullet-item"><strong></strong> </li>
-                                <li class="bullet-item"><strong></strong> </li>
-                                <li class="bullet-item"><strong></strong> </li>
-                                <li class="bullet-item"> <span style="color:white;">dsdffd</span> </li>
-                                
-                                <li class="cta-button"><a class="button" href="contacto.php">COTIZAR</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="large-4 column">
-                            <ul class="pricing-table highlight">
-                                <li class="title">PRO-PYME</li>
-                                <li class="price"><span></span>
-                                </li>
-                                <li class="bullet-item"><strong></strong>Balance anual</li>
-                                <li class="bullet-item"><strong></strong> Liquidaci&#243;n remuneraciones hasta 10 empleado</li>
-                                <li class="bullet-item"><strong></strong> Declaraci&#243;n de renta anual</li>
-                                <li class="bullet-item"><strong></strong> Proceso declaraciones juradas</li>
-                                <li class="bullet-item"><strong></strong> Planificaci&#243;n tributaria inicial</li>
-                                <li class="bullet-item"><strong></strong> Asesor&#237;a permanente telef&#243;nica - email</li>
-                                <li class="bullet-item"><span style="color:white;">dsdffd</span> </li>
-                                
-                                <li class="cta-button"><a class="button" href="contacto.php">COTIZAR</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="large-4 column">
-                            <ul class="pricing-table highlight">
-                                <li class="title">PYME</li>
-                                <li class="price"><span></span>
-                                </li>
-                                <li class="bullet-item"><strong></strong> Balance anual</li>
-                                <li class="bullet-item"><strong></strong> Liquidaci&#243;n remuneraciones hasta 30 empleado</li>
-                                <li class="bullet-item"><strong></strong> Declaraci&#243;n de renta anual</li>
-                                <li class="bullet-item"><strong></strong> Proceso declaraciones juradas</li>
-                                <li class="bullet-item"><strong></strong> Planificaci&#243;n tributaria inicial</li>
-                                <li class="bullet-item"><strong></strong> Asesor&#237;a permanente telef&#243;nica - email</li>
-                                <li class="bullet-item">Una visita mensual</li>
-                                
-                                <li class="cta-button"><a class="button" href="contacto.php">COTIZAR</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
             
             <div class="row">
                 <div class="large-12 column">
@@ -259,84 +134,12 @@
             <div class="large-6 column">
                 <h4>Sobre Nosotros</h4>
                 <br>
-                 <div id="map-canvas"><!--
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3330.647017348027!2d-70.5722868!3d-33.4063721!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cedf3585fda3%3A0x6b2384431639699a!2sLos+Militares+5620!5e0!3m2!1ses-419!2scl!4v1401573738934" width="400" height="300" frameborder="0" style="border:0"></iframe>
-                        <br><br>
--->                    </div>
-                    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-                    <script>
-                        var latitude = -33.406377;
-                        var longitude =  -70.572265;
+                 <div id="map-canvas">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.5989580526425!2d-70.56971589999999!3d-33.407625599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cedee6357ec7%3A0x5f5b7a4b7ec392d5!2sAlonso+de+C%C3%B3rdova+5870%2C+Las+Condes%2C+Regi%C3%B3n+Metropolitana+de+Santiago!5e0!3m2!1ses-419!2scl!4v1432235668983" width="450" height="225" frameborder="0" style="border:0"></iframe>
 
-                        function initialize() {
-                            var e = new google.maps.LatLng(latitude, longitude);
-                            var t = {
-                                zoom: 16,
-                                center: e,
-                                mapTypeId: google.maps.MapTypeId.ROADMAP
-                            };
-                            var n = new google.maps.Map(document.getElementById("map-canvas"), t);
-                            var r = new google.maps.Marker({
-                                position: e,
-                                map: n,
-                                title: "Hello World!"
-                            })
-                        }
-                        google.maps.event.addDomListener(window, "load", initialize)
-                    </script>
-<!--                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3330.647017348027!2d-70.5722868!3d-33.4063721!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cedf3585fda3%3A0x6b2384431639699a!2sLos+Militares+5620!5e0!3m2!1ses-419!2scl!4v1401573738934" width="400" height="300" frameborder="0" style="border:0"></iframe>-->
-<!--                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
-                </p>
-
-                <ul class="large-block-grid-5 popup">
-                    <li>
-                        <a href="images/photos/person1.jpg">
-                            <img src="images/photos/person1_s.jpg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="images/photos/person2.jpg">
-                            <img src="images/photos/person2_s.jpg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="images/photos/person3.jpg">
-                            <img src="images/photos/person3_s.jpg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="images/photos/person4.jpg">
-                            <img src="images/photos/person4_s.jpg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="images/photos/person5.jpg">
-                            <img src="images/photos/person5_s.jpg" alt="">
-                        </a>
-                    </li>
-                </ul>-->
-            </div>
-
-<!--            <div class="large-2 column">
-                <h4>Services</h4>
-                <ul class="side-nav">
-                    <li><a href="plans.html#shared">Shared Hosting</a>
-                    </li>
-                    <li><a href="plans.html#dedicated">Dedicated Servers</a>
-                    </li>
-                    <li><a href="blog.html">Our Blog</a>
-                    </li>
-                    <li><a href="about.html">About us</a>
-                    </li>
-                    <li><a href="404.html">Terms of Service</a>
-                    </li>
-                    <li><a href="404.html">Privacy Policy</a>
-                    </li>
-                    <li><a href="contact.html">Contact us</a>
-                    </li>
-                </ul>
-            </div>-->
+           			 </div>
+		</div>
+        
 
             <div class="large-6 column">
                 <h4>Contacto</h4>
@@ -346,7 +149,8 @@
                         <h6>Direcci&#243n:</h6>
                     </div>
                     <div class="small-9 column">
-                        <p>Los militares #5620, oficina 1127, Las condes, Santiago</p>
+                        <p>Casa matriz: Alonso de Cordova Nº 5870, oficina 724, Las condes</p>
+                        <p>Sucursal: Lord Cochrane Nº 30, oficina 901, Santiago Centro </p>
                     </div>
                 </div>
 

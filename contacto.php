@@ -64,8 +64,6 @@
                             </li>
                             <li><a href="tarifas.php">Tarifas</a>
                             </li>
-                            <li><a href="contacto.php">Contacto</a>
-                            </li>
                             <li><a href="intranet/index.php">Intranet</a>
                             </li>   
 <!--                            <li id="signup"><a href="signup.html" class="button no-margin">SIGN UP</a>
@@ -225,6 +223,8 @@
                 </div>
                 <div class="large-4 column ">
                     <div id="map-canvas">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.5989580526425!2d-70.56971589999999!3d-33.407625599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cedee6357ec7%3A0x5f5b7a4b7ec392d5!2sAlonso+de+C%C3%B3rdova+5870%2C+Las+Condes%2C+Regi%C3%B3n+Metropolitana+de+Santiago!5e0!3m2!1ses-419!2scl!4v1432235668983" width="300" height="250" frameborder="0" style="border:0"></iframe>
+                    
                 </div>
                     
 
@@ -233,7 +233,8 @@
                             <h6>Direcci&#243n:</h6>
                         </div>
                         <div class="small-9 column">
-                            <p>Los militares #5620, oficina 1127, Las condes, Santiago</p>
+                            <p>Casa matriz: Alonso de Cordova Nº 5870, oficina 724, Las condes</p>
+                        	<p>Sucursal: Lord Cochrane Nº 30, oficina 901, Santiago Centro </p>
                         </div>
                     </div>
 
@@ -270,52 +271,11 @@
                 <h4>Sobre Nosotros</h4>
                 <br>
                 <div id="map-casa">
-                    <img src="images/mapa.jpg">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.5989580526425!2d-70.56971589999999!3d-33.407625599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cedee6357ec7%3A0x5f5b7a4b7ec392d5!2sAlonso+de+C%C3%B3rdova+5870%2C+Las+Condes%2C+Regi%C3%B3n+Metropolitana+de+Santiago!5e0!3m2!1ses-419!2scl!4v1432235668983" width="450" height="225" frameborder="0" style="border:0"></iframe>
+                
                 </div>
-                    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-                    <script>
-                        var latitude = -33.406377;
-                        var longitude =  -70.572265;
-
-                        function initialize() {
-                            var e = new google.maps.LatLng(latitude, longitude);
-                            var t = {
-                                zoom: 16,
-                                center: e,
-                                mapTypeId: google.maps.MapTypeId.ROADMAP
-                            };
-                            var n = new google.maps.Map(document.getElementById("map-canvas"), t);
-                            var r = new google.maps.Marker({
-                                position: e,
-                                map: n,
-                                title: "Terrazul"
-                            })
-                        }
-                        google.maps.event.addDomListener(window, "load", initialize);
-                    </script>
-                    
-
             </div>
 
-<!--            <div class="large-2 column">
-                <h4>Services</h4>
-                <ul class="side-nav">
-                    <li><a href="plans.html#shared">Shared Hosting</a>
-                    </li>
-                    <li><a href="plans.html#dedicated">Dedicated Servers</a>
-                    </li>
-                    <li><a href="blog.html">Our Blog</a>
-                    </li>
-                    <li><a href="about.html">About us</a>
-                    </li>
-                    <li><a href="404.html">Terms of Service</a>
-                    </li>
-                    <li><a href="404.html">Privacy Policy</a>
-                    </li>
-                    <li><a href="contact.html">Contact us</a>
-                    </li>
-                </ul>
-            </div>-->
 
             <div class="large-6 column">
                 <h4>Contacto</h4>
@@ -325,7 +285,8 @@
                         <h6>Direcci&#243n:</h6>
                     </div>
                     <div class="small-9 column">
-                        <p>Los militares #5620, oficina 1127, Las condes, Santiago</p>
+                        <p>Casa matriz: Alonso de Cordova Nº 5870, oficina 724, Las condes</p>
+                        <p>Sucursal: Lord Cochrane Nº 30, oficina 901, Santiago Centro </p>
                     </div>
                 </div>
 
