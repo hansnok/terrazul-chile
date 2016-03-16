@@ -63,7 +63,7 @@
                             </li>
                             <li><a href="contacto.php">Contacto</a>
                             </li>
-                            <li><a href="intranet/index.php">Intranet</a>
+                            <li><a href="http://intranet.trzl.cl/login/index.php">Intranet</a>
                             </li>
                         </ul>
                     </section>
