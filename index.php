@@ -12,6 +12,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <![endif]-->
     <title>Terrazul</title>
+	<meta name="google-site-verification" content="tVFPokRZMAvVBx5DgNy_NyZQ5A6SM1YUQHuPMoXRVZE" />
     <meta name="description" content="Empresa de asesorias tributarias y contables, amplio conocimiento del rubro nacional e internacional"  lang="ES"/>
     <meta name="keywords" content="asesoria,impuestos,tributaria,contabilidad,reforma tributaria,beneficios tributarios,Payroll,ayuda pyme,pyme,emprendimiento" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
